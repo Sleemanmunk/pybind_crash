@@ -1,0 +1,17 @@
+Performing C++ SOURCE FILE Test HAS_FLTO failed with the following output:
+Change Dir: /deployment/python_in_cpp_trivial/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_24275/fast 
+make: Warning: File `Makefile' has modification time 2.1 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_24275.dir/build.make CMakeFiles/cmTC_24275.dir/build
+make[1]: Entering directory `/deployment/python_in_cpp_trivial/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: Warning: File `CMakeFiles/cmTC_24275.dir/flags.make' has modification time 2.1 s in the future
+Building CXX object CMakeFiles/cmTC_24275.dir/src.cxx.o
+/usr/local/bin/g++    -DHAS_FLTO   -flto -fno-fat-lto-objects -o CMakeFiles/cmTC_24275.dir/src.cxx.o -c /deployment/python_in_cpp_trivial/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: error: -fno-fat-lto-objects are supported only with linker plugin
+make[1]: *** [CMakeFiles/cmTC_24275.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/deployment/python_in_cpp_trivial/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [cmTC_24275/fast] Error 2
+
+Source file was:
+int main() { return 0; }
