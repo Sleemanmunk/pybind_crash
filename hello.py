@@ -1,4 +1,5 @@
 import torch
-def hello():
-    print ("Hello, World!")
+def hello(names):
+    for name in names:
+        print (f"Hello, {name}!")
     print (torch.ones(1)+ torch.ones(1))
