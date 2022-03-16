@@ -1,1 +1,0 @@
-/usr/local/bin/g++  -g   CMakeFiles/example.dir/main.cpp.o  -o example -Wl,-rpath,/anaconda/anaconda3/lib /anaconda/anaconda3/lib/libpython3.7m.so 

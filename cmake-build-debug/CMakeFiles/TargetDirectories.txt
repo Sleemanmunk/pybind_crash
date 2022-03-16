@@ -1,3 +1,0 @@
-/deployment/python_in_cpp_trivial/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/deployment/python_in_cpp_trivial/cmake-build-debug/CMakeFiles/example.dir
-/deployment/python_in_cpp_trivial/cmake-build-debug/CMakeFiles/edit_cache.dir

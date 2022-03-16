@@ -6,29 +6,12 @@ using namespace std;
 int main() {
     py::scoped_interpreter guard{}; // start the interpreter and keep it alive
 
-    py::print("Hello, World!"); // use the Python API
-    py::print(); // use the Python API
+    cout << "Pybind Version: " << "v2.9.1" << endl;
 
-    //***
-    //Load your desired module
-    //***
-    py::module_ hello= py::module_::import("hello");
+    py::exec("import torch;"
+             "import platform;"
+             "print ('Python Version: ' + platform.python_version());"
+             "print ('Torch Version: ' + torch.__version__);"
+             "");
 
-
-    //***
-    //Generate python variables holding your inputs
-    //***
-    py::list names;
-
-    for (auto name:{"World", "Python", "C++"}){
-        names.append(name);
-    }
-
-    //***
-    //Run a function from your module
-    //***
-    hello.attr("hello")(names);
-
-    cout << "The program has completed successfully" << endl;
-    exit(0);
 }
